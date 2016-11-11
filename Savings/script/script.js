@@ -52,7 +52,7 @@ function loadData(){
                }
             }
             //http request to get the data from JSON which is being served through JSON-server
-            http_request.open("GET", "http://localhost:3001/account", true);
+            http_request.open("GET", "http://localhost:3000/account", true);
             http_request.send();
          };
 
@@ -102,7 +102,7 @@ function MobileView(){
 function change(id){
   console.log("id",id);
   mt.innerHTML = '';
-  //Setting the names of the navigation links dynamically 
+  //Setting the names of the navigation links dynamically
   if(id == "right"){
     leftaid.innerHTML = "&lt"+def;
     i++;
