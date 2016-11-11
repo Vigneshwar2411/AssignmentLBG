@@ -1,0 +1,49 @@
+h1 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 480px) {
+    h1 {font-family: "Helvetica Neue", Helvetica;
+    font-size: 24px;
+    font-weight: bold;}
+    table { text-align: left;}
+    #responsive {display: none;}
+}
+
+@media screen and (max-width: 480px) {
+    #main {display: none;}
+    table { width:100%; text-align: center;}
+}
+
+
+table {
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+td,th {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: bold;
+  line-height: 36px;
+  border-right: 3px solid black;
+}
+
+th {
+  background-color: #008c85;
+  color: #e4efee;
+}
+
+td {
+  color: #0c332f;
+}
+
+a{
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: bold;
+  font-size: 20px;
+  color: #8c6300;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}

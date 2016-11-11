@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>LookUp Table</title>
+  <link rel="stylesheet" href="styles/main.css" />
+
+</head>
+<!-- Load data function is called to execute the AJAX request using XMLHttpRequest -->
+<body onload="loadData()">
+    <h1>Search</h1>
+    <table id="Search">
+        <tbody>
+            <tr>
+                <td>
+                    <input type="text" id="textBoxSearch" placeholder="Search" onkeyup="tableSearch.search(event);" />
+                    <input type="button" value="Search" onclick="tableSearch.runSearch();" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+<!-- Table to be displayed when desktop view is opened -->
+    <div id="main">
+      <table id="desktoptable">
+      </table>
+    </div>
+<!-- Table to be displayed when mobile view is opened -->
+    <div id="responsive">
+        <table id="mobiletable">
+        </table>
+    </div>
+      <script src="script/script.js"></script>
+</body>
+</html>

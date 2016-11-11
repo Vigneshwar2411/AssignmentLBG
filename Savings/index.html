@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<!-- Viewport is used to accomodate different screens and viewports -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Pivot Table</title>
+  <link rel="stylesheet" href="styles/main.css" />
+
+</head>
+<!-- Load data function is called to execute the AJAX request using XMLHttpRequest -->
+<body onload="loadData()">
+    <h1>Savings Account</h1>
+<!-- Table to be displayed when desktop view is opened -->
+    <div id="main">
+      <table id="desktoptable">
+      </table>
+    </div>
+<!-- Table to be displayed when mobile view is opened -->
+    <div id="responsive">
+        <table id="mobiletable">
+        </table>
+        <span><a href=# id="left" onclick="change(this.id)">&ltLeft</a></span>
+        <span style="float:right"><a href=# id="right" onclick="change(this.id)">Right&gt</a></span>
+    </div>
+      <script src="script/script.js"></script>
+</body>
+</html>

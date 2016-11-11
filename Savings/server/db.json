@@ -1,0 +1,22 @@
+{
+  "account" :[
+  {
+    "Product": "Fixed saver",
+    "Interest_rate": "20%",
+    "Minimum_Deposit": "$500",
+    "Interest_type": "Fixed1"
+  },
+  {
+    "Product": "Flex saver",
+    "Interest_rate": "40%",
+    "Minimum_Deposit": "$1500",
+    "Interest_type": "Flex1"
+  },
+  {
+    "Product": "Offset saver",
+    "Interest_rate": "20%",
+    "Minimum_Deposit": "$500",
+    "Interest_type": "Offset1"
+  }
+]
+}
